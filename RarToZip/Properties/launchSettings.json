@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "RarToZip": {
+      "commandName": "Project",
+      "commandLineArgs": "-i input.rar -o output.rar"
+    }
+  }
+}
