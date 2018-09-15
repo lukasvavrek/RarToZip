@@ -50,7 +50,6 @@ let extractRarIntoTempFolder (fileName: string) dir =
         |> Seq.cast
         |> Seq.filter (fun (entry: RarArchiveEntry) -> not entry.IsDirectory)
         |> Seq.iter (fun entry -> entry.WriteToDirectory(dir, new ExtractionOptions()))
-        |> ignore
 
         ConversionSucceded
 
